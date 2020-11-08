@@ -26,13 +26,13 @@ function App() {
             <h3>Get your roof inspected remotely and connect with our trusted roofers</h3>
           </div>
           <StyledSearchBar>
-            <img src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" alt="Enter your address for Free Roof Inspection" />
             <div>
+            <img src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" alt="Enter your address for Free Roof Inspection" />
               <label>
                 <input placeholder="Your Address" />
               </label>
-              <button>Get Inspection</button>
             </div>
+            <button>Get Inspection</button>
           </StyledSearchBar>
         </div >
       </header>

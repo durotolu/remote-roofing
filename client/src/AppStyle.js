@@ -8,7 +8,7 @@ export const StyledApp = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  height: 40em;
+  height: 37.5em;
 
   header {
     max-width: 68.5%;
@@ -23,6 +23,7 @@ export const StyledApp = styled.div`
     
       img {
         height: 2em;
+        cursor: pointer;
       }
     
       div {
@@ -132,35 +133,42 @@ export const StyledSearchBar = styled.div`
   margin-top: 3em;
   box-shadow: 1px 1px 3px 0 #000;
 
-  img {
-    border: 2px solid black;
-    height: 1.9em;
-    margin-left: 0.5em;
+  button {
+    height: 3.5em;
+    width: 25em;
+    background-color: #017afe;
+    color: white;
+    max-width: 190px;
+    min-width: auto;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 22px;
+    cursor: pointer;
   }
 
   div {
-    border: 2px dotted black;
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 100%;
+    justify-content: space-between;
+
+    img {
+      height: 2em;
+      margin-left: 1em;
+    }
+
+    label {
+      width: 85.5%;
+    }
 
     input {
       height: 3em;
       border: none;
+      width: 100%;
     }
 
     input:focus {
       outline: 1px solid #017afe;
-    }
-
-    button {
-      height: 3.5em;
-      background-color: #017afe;
-      color: white;
-      border-top-left-radius: 10% 50%;
-      border-top-right-radius: 10% 50%;
-      border-bottom-left-radius: 10% 50%;
-      border-bottom-right-radius: 10% 50%;
     }
   }
 `

@@ -6,77 +6,115 @@ export const StyledApp = styled.div`
   background-image: url("https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5923b3f775ad961072248b_rr-bg-1920w-optimized.png");
   background-size: 1500px;
   background-repeat: no-repeat;
-  /* height:570px; */
-  /* width: 3000px; */
   background-position: center;
-`
-
-export const Header = styled.header`
   color: white;
-  max-width: 68.5%;
-  margin: 0 auto;
-  text-decoration: none;
-`
-export const Head = styled.div`
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  margin: 1.3em auto;
+  height: 40em;
 
-  img {
-    height: 2em;
+  header {
+    max-width: 68.5%;
+    margin: 0 auto;
+    text-decoration: none;
+    
+    .top-banner {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin: 1.3em auto;
+    
+      img {
+        height: 2em;
+      }
+    
+      div {
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+    
+        img {
+          height: 1em;
+          margin-right: 0.5em
+        }
+      }
+    
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+    }
+    
+    nav {
+      margin: 2.5em auto;
+    
+      div {
+        max-width: 26%;
+        display: flex;
+        text-decoration: none;
+    
+        a {
+          margin-right: 1.5em;
+          text-decoration: none;
+          color: white;
+          font-size: 1.3em;
+    
+          span {
+            border-bottom: 3px solid;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    
+    .heading {
+      text-align: left;
+      margin: 4.5em 0;
+    
+      h1 {
+        font-size: 2.65em;
+        margin-bottom: 0.5em;
+      }
+    
+      h3 {
+        font-size: 1.22em;
+      }
+    }
   }
 
-  div {
+  .benefits {
+    background-color: #0059bf;
+    width: 68.5%;
+    height: 11em;
+    border-radius: 15px;
     display: flex;
-    align-items: center;
-    margin-right: 2%;
-    img {
-      height: 1em;
-      margin-right: 0.5em
+    justify-content: space-evenly;
+    z-index: 2;
+    position: absolute;
+    left: 15%;
+    top: 72.5%;
+
+    .service {
+      display: flex;
+      align-items: center;
+      margin-left: 4em;
+
+      p {
+        text-align: left;
+        margin-left: 1.5em;
+        font-size: 1.3em;
+      }
+
+      .inspection {
+        width: 50%;
+      }
+
+      .replace {
+        width: 50%;
+      }
+
+      img {
+        height: 4em;
+      }
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-`
-
-export const StyledNav = styled.nav`
-  margin: 2.5em auto;
-  div {
-    max-width: 26%;
-    display: flex;
-    /* justify-content: space-between; */
-    text-decoration: none;
-
-    a {
-    margin-right: 1.5em;
-    text-decoration: none;
-    color: white;
-    font-size: 1.3em;
-
-    span {
-      border-bottom: 3px solid;
-      padding-bottom: 10px;
-    }
-    }
-  }
-`
-
-export const StyledHeading = styled.div`
-  text-align: left;
-  margin: 4.5em 0;
-
-  h1 {
-    font-size: 2.65em;
-    margin-bottom: 0.5em;
-  }
-
-  h3 {
-    font-size: 1.22em;
   }
 `
 
@@ -92,6 +130,7 @@ export const StyledSearchBar = styled.div`
   justify-content: space-around;
   align-items: center;
   margin-top: 3em;
+  box-shadow: 1px 1px 3px 0 #000;
 
   img {
     border: 2px solid black;

@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const StyledApp = styled.div`
   background-color: #74787a;
-  border: 2px solid black;
   background-image: url("https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5923b3f775ad961072248b_rr-bg-1920w-optimized.png");
   background-size: 1500px;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   height: 37.5em;
+  padding-top: 1px;
 
   header {
     max-width: 68.5%;
-    margin: 0 auto;
+    margin: auto;
     text-decoration: none;
     
     .top-banner {
@@ -33,7 +33,6 @@ export const StyledApp = styled.div`
     
         img {
           height: 1em;
-          margin-right: 0.5em
         }
       }
     
@@ -83,15 +82,15 @@ export const StyledApp = styled.div`
 
   .benefits {
     background-color: #0059bf;
-    width: 68.5%;
-    height: 11em;
-    border-radius: 15px;
+    width: 65.3em;
+    height: 10em;
+    border-radius: 11px;
     display: flex;
     justify-content: space-evenly;
-    z-index: 2;
     position: absolute;
     left: 15%;
     top: 72.5%;
+    box-shadow: 2px 2px 7px 0 rgba(10,10,10,.5);
 
     .service {
       display: flex;
@@ -102,6 +101,7 @@ export const StyledApp = styled.div`
         text-align: left;
         margin-left: 1.5em;
         font-size: 1.3em;
+        width: 6em;
       }
 
       .inspection {
@@ -164,7 +164,7 @@ export const StyledSearchBar = styled.div`
     input {
       height: 3em;
       border: none;
-      width: 100%;
+      width: 98.5%;
     }
 
     input:focus {

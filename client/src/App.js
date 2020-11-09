@@ -22,7 +22,7 @@ function App() {
         </nav>
         <div className="heading">
           <div>
-            <h1>Free Roof Repair Inspection & Local Roofing Quote</h1>
+            <h1>Roof inspection made remote and easy</h1>
             <h3>Get your roof inspected remotely and connect with our trusted roofers</h3>
           </div>
           <StyledSearchBar>

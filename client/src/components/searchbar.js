@@ -1,22 +1,40 @@
-import React, { useState } from "react"
-import { StyledSearchBar } from '../AppStyle'
+import React, { useState } from "react";
+import { StyledSearchBar } from '../AppStyle';
+import usePlacesAutocomplete, { getGeocode, getLatLng } from "use-places-autocomplete";
+import home_pin from "../images/blue-home-pin.png";
 
 function Searchbar() {
   const [search, setSearch] = useState("");
   // const debouncedSearch = useDebounce(search, 700);
+  const { ready, value, suggestions: { loading, status, data }, setValue } = usePlacesAutocomplete();
 
   const onChangeSearch = e => {
-    const value = e.target.value;
-    console.log(value)
+    const input = e.target.value;
+    setValue(input);
+    console.log({
+      ready,
+      value,
+      loading,
+      status,
+      data,
+      setValue
+    })
     // setSearch(value);
+    // axios.get("https://maps.googleapis.com/maps/api/place/autocomplete/xml?input=Paris&types=geocode&key=AIzaSyDy6b4AjIUft688RxkPR9fbZ2s9PP9BmUQ")
+    //   .then(res => {
+    //     console.log(res)
+    //   }).catch(err => {
+    //     console.log(err)
+    //   })
   };
 
   return (
     <StyledSearchBar>
+      {/* <LocationAutocomplete  /> */}
       <div>
-        <img src="https://uploads-ssl.webflow.com/5f127ac8860f158e650f06b5/5f5a6d20aa3c71469c732751_blue-home-pin.png" alt="Enter your address for Free Roof Inspection" />
+        <img src={home_pin} alt="Enter your address for Free Roof Inspection" />
         <label>
-          <input placeholder="Your Address" onChange={onChangeSearch} />
+          <input value={value} placeholder="Your Address" maxLength="256" onChange={onChangeSearch} />
         </label>
       </div>
       <button>Get Inspection</button>

@@ -82,8 +82,8 @@ export const StyledApp = styled.div`
 
   .benefits {
     background-color: #0059bf;
-    width: 65.3em;
-    height: 10em;
+    width: 68%;
+    height: 10.5em;
     border-radius: 11px;
     display: flex;
     justify-content: space-evenly;
@@ -95,13 +95,13 @@ export const StyledApp = styled.div`
     .service {
       display: flex;
       align-items: center;
-      margin-left: 4em;
+      margin-left: 7%;
 
       p {
         text-align: left;
         margin-left: 1.5em;
         font-size: 1.3em;
-        width: 6em;
+        width: 90%;
       }
 
       .inspection {

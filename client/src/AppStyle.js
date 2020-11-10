@@ -159,16 +159,25 @@ export const StyledSearchBar = styled.div`
 
     label {
       width: 85.5%;
+
+      input {
+        height: 3em;
+        border: none;
+        width: 98.5%;
+        background-color: transparent;
+      }
+
+      input:focus {
+        outline: 1px solid #017afe;
+      }
+
+      input[list]::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+      input::-webkit-list-button {
+        display: none;
+      }
     }
 
-    input {
-      height: 3em;
-      border: none;
-      width: 98.5%;
-    }
-
-    input:focus {
-      outline: 1px solid #017afe;
-    }
   }
 `

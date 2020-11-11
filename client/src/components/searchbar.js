@@ -25,7 +25,7 @@ function Searchbar() {
       <div>
         <img src={home_pin} alt="Enter your address for Free Roof Inspection" />
         <label name="location">
-          <DebounceInput minLength={1} debounceTimeout={500} list="locations" placeholder="Your Address" onChange={onChangeSearch} onClick={null} />
+          <DebounceInput minLength={1} debounceTimeout={300} list="locations" placeholder="Your Address" onChange={onChangeSearch} onClick={null} />
           <datalist name="locations" id="locations">
             {search.map((location, i) =>
               <option key={i} value={location}>{location}</option>

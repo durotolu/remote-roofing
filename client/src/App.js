@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import { StyledApp } from './AppStyle'
 import NavBanner from "./components/navbanner"
 import Benefits from "./components/benefits"
@@ -7,7 +5,7 @@ import Searchbar from "./components/searchbar"
 
 function App() {
   return (
-    <StyledApp className="App">
+    <StyledApp>
       <header>
         <NavBanner />
         <div className="heading">

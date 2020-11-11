@@ -11,13 +11,12 @@ function Searchbar() {
 
   const onChangeSearch = e => {
     const input = e.target.value;
-    console.log(input)
     axios.post(api, { search: input })
       .then(res => {
         const data = res.data
         setSearch(data)
       }).catch(err => {
-        console.log(err)
+        alert(err)
       })
   };
 
@@ -25,11 +24,11 @@ function Searchbar() {
     <StyledSearchBar>
       <div>
         <img src={home_pin} alt="Enter your address for Free Roof Inspection" />
-        <label for="location">
+        <label name="location">
           <DebounceInput minLength={1} debounceTimeout={500} list="locations" placeholder="Your Address" onChange={onChangeSearch} onClick={null} />
           <datalist name="locations" id="locations">
-            {search.map(location =>
-              <option value={location}>{location}</option>
+            {search.map((location, i) =>
+              <option key={i} value={location}>{location}</option>
             )}
           </datalist>
         </label>

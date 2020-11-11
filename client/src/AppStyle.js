@@ -10,6 +10,10 @@ export const StyledApp = styled.div`
   height: 37.5em;
   padding-top: 1px;
 
+  @media screen and (max-width: 456px) {
+    height: 43em;
+  }
+
   header {
     max-width: 68.5%;
     margin: auto;
@@ -34,12 +38,16 @@ export const StyledApp = styled.div`
         img {
           height: 1em;
         }
-      }
-    
-      a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+        }
+
+        @media screen and (max-width: 456px) {
+          font-size: .8em;
+        }
       }
     }
     
@@ -82,8 +90,8 @@ export const StyledApp = styled.div`
 
   .benefits {
     background-color: #0059bf;
-    width: 65.3em;
-    height: 10em;
+    width: 68%;
+    height: 10.5em;
     border-radius: 11px;
     display: flex;
     justify-content: space-evenly;
@@ -95,13 +103,13 @@ export const StyledApp = styled.div`
     .service {
       display: flex;
       align-items: center;
-      margin-left: 4em;
+      margin-left: 7%;
 
       p {
         text-align: left;
         margin-left: 1.5em;
         font-size: 1.3em;
-        width: 6em;
+        width: 90%;
       }
 
       .inspection {
@@ -115,6 +123,22 @@ export const StyledApp = styled.div`
       img {
         height: 4em;
       }
+
+      @media screen and (max-width: 970px) {
+        img{
+          height: 2em;
+        }
+
+        p {
+          margin-left: .5em;
+          font-size: 1.1em;
+          width: 90%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 635px) {
+      display: none
     }
   }
 `

@@ -2,6 +2,7 @@
 Recreating a portion of www.remoteroofing.com
 
 > This is a clone of the top section of the above mentioned web app.
+
 > Sample data from a backend is provided so addresses can be searched with auto complete feature.
 
 ## Built with React, Styled-components and Axios
@@ -16,6 +17,7 @@ npm install
 
 ```sh
 npm start
+```
 
 Spins up local on port 3000
 
